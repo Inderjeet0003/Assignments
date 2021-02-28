@@ -1,0 +1,55 @@
+ h1{
+    background-color: rgb(226, 43, 89);
+    text-align: center;
+    border-radius: 20px;
+ }
+
+ #abc{
+    background-color :rgb(255, 72, 0);
+    border: 2px solid black;
+    margin: 20px;
+    top: -5px;
+    position: sticky;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 2.5rem;
+} 
+
+div div{
+    content: '/2706';
+    border-radius: 20px;
+    border: 1px solid rgb(47, 0, 255);
+    background-color: bisque;
+    margin: 15px 20px 15px 150px;
+    position: sticky;
+    width: 50%;
+    height: 40px;
+    font-size: 20px;
+}
+
+div :nth-of-type(2){
+    content: '/2706';
+    border-radius: 20px;
+    border: 1px solid rgb(47, 0, 255);
+    background-color: rgb(219, 150, 171);
+    margin: 15px 20px 15px 150px;
+    position: sticky;
+    width: 50%;
+}
+
+div :nth-of-type(4){
+    content: '/2706';
+    border-radius: 20px;
+    border: 1px solid rgb(47, 0, 255);
+    background-color: rgb(230, 160, 55);
+    margin: 15px 20px 15px 150px;
+    position: sticky;
+    width: 50%;
+}
+
+div div:hover{
+    background-color: rgb(216, 248, 35);
+}

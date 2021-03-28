@@ -1,14 +1,14 @@
-let input = document.getElementById('inp');
-let btn = document.getElementById('addTodo');
-let list = document.getElementById('list');
+const input = document.getElementById('inp');
+const btn = document.getElementById('addTodo');
+const list = document.getElementById('list');
 
 btn.onclick = function (e) {
     
-    let todoText = input.value;
-    let li = document.createElement('li');
+    const todoText = input.value;
+    const li = document.createElement('li');
     li.style.borderBottom ="1px solid white";
-    let editBttn =  document.createElement('button');
-    let dltBttn = document.createElement('button');
+    const editBttn =  document.createElement('button');
+    const dltBttn = document.createElement('button');
     dltBttn.setAttribute("id","delete");
     editBttn.setAttribute("id","edit");
     li.append(dltBttn);
@@ -26,6 +26,7 @@ btn.onclick = function (e) {
     }
 
     dltBttn.onclick = function(e){
+        dltBttn.setAttribute("contentEditable","false")
         e.target.parentNode.remove();
     }
     editBttn.onclick = function(e){

@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size:24px;
+    font-family: 'Roboto', sans-serif;
+  }
+  /* setting body background colr and hegt weight */
+  body{
+     background-color:#181a1a;   
+     width:100vw;
+     height:95vh; 
+  
+  }
+/* input styling */
+  #inp{
+      border: 2px solid white;
+      color: white;
+      width: 300px;
+      height: 50px;
+      margin: 5px;
+      border-radius: 10px;
+      background-color: #1a1d20;
+  }
+/* heading */
+h1{
+  font-size:50px;
+}
+  #heading{
+    font-size:3rem;
+    font-family :Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width:400px;
+    margin:50px auto;
+    color:#f54009 ;
+  }
+
+  #span{
+    margin:0px 0px 0px 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:3rem;
+    color:red;
+  }
+  
+  section {
+    width: 500px;
+    margin: 50px auto;
+  }
+
+  /* ul and list styling */
+  ul {
+    list-style: none;
+  }
+  
+  li {
+    border-bottom: 1px solid white;
+    padding: 5px;
+    cursor: pointer;
+    color:white;
+    display:inline-block;
+    width:600px;
+  }
+/* button */
+  #addTodo{
+    border:2px solid white;
+    color:white;
+    border-radius: 10px;
+    background-color: #1a1d20;
+    width:150px;
+    height: 50px;
+    margin:0px;
+    transition: 300ms;
+  }
+  #addTodo:click{
+      transform: scale(0.8);
+  }
+
+  .box{
+    width:600px;
+    margin:20px auto;
+    /* border: 5px solid white; */
+  }
+  .fa-plus-circle{
+    width: 100px;
+  }
+
+  /* delet button */
+  #delete{
+    border-radius: 10px;
+    border:none;
+    color:white;
+    background-color:#f54009;
+    width:100px;
+    margin:0px 0px 0px 150px;
+  }
+
+  /* edit button */
+  #edit{
+    /* margin:0px 10px 0px 0px; */
+    border-radius: 10px;
+    margin:0px 0px 0px 50px;
+    border:none;
+    color:white;
+    background-color: #4cc55c;
+    width:100px;
+  }

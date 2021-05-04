@@ -1,0 +1,30 @@
+<%- include("../partials/header")%>
+    <%- include("../partials/navbar")%>
+
+
+
+        <div class="container" style="margin-top:3rem;width:80vw">
+
+            <form class="validated-form" action="/blogs/<%=blog._id%>?_method=PATCH" method="POST" style="max-width:70%;margin:10px auto" novalidate>
+                <div class="mb-3">
+                    <label for="heading" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="heading" placeholder="blog Name" name="blog[heading]" value="<%=blog.heading%>" required>
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="img" class="form-label">Image URL</label>
+                    <input type="text" class="form-control" id="img" placeholder="Image URL" heading="blog[img]" value="<%=blog.img%>" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="desc" class="form-label">Description</label>
+                    <textarea class="form-control" id="desc" cols="30" rows="5" name="blog[desc]" required><%=blog.desc%>"</textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+
+        </div>
+
+        <%- include("../partials/footer")%>

@@ -1,0 +1,42 @@
+<%- include("../partials/header")%>
+    <%- include("../partials/navbar")%>
+
+
+        <main class="container">
+
+            <section>
+                <%- include("../partials/flash")%>
+
+                    <div class="card-body" style="font-size: 3rem;text-shadow: 2px 1px 3px red;text-align: center;font-weight: bold;">
+                        Blog-App
+                    </div>
+
+                    <!-- <h4 class="display-4">Blog-App</h4> -->
+            </section>
+
+            <div class="row blogs">
+
+                <%for(let blog of blogs){%>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card text-center m-3" style="width: 18rem;height: 25rem;">
+                            <img src="<%=blog.img%>" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <%=blog.heading%>
+                                </h5>
+                                <p class="card-text">
+                                    <%=blog.desc.substring(0,70)%>
+                                </p>
+                                <a href="blogs/<%=blog._id%>" class="btn btn-outline-primary">More Info</a>
+                            </div>
+                        </div>
+                    </div>
+                    <% }%>
+            </div>
+
+
+
+            </div>
+
+
+            <%- include("../partials/footer")%>
